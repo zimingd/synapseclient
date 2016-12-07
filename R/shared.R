@@ -35,7 +35,6 @@
 # (3) comments
 # returns a list having fields: name, args, doc
 .getSynapseFunctionInfo<-function(rootDir) {
-	#.addPythonAndLibFoldersToSysPath(rootDir)
 	python.load(file.path(.getPythonFolderPath(rootDir), "functionInfo.py"))
 	result<-python.get("functionInfo()")
 	# the now add the prefix 'syn'
