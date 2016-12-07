@@ -12,7 +12,6 @@ def main(path):
     moduleInstallationFolder=path+os.sep+"inst"
     sys.path.insert(0, moduleInstallationFolder)
     # The preferred approach is to use pip...
-    pip.main(['install', 'pip',  '--upgrade'])
     pip.main(['install', '--user', 'urllib3',  '--upgrade'])
     pip.main(['install', '--user', 'requests',  '--upgrade'])
     pip.main(['install', '--user', 'six',  '--upgrade'])
